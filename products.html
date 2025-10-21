@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - SurgiAID Traders</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-user-md"></i>
+                    <span>SurgiAID Traders</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link active">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title animate__animated animate__fadeInUp">Our Products</h1>
+            <p class="page-subtitle animate__animated animate__fadeInUp animate__delay-1s">Premium surgical instruments for healthcare professionals</p>
+        </div>
+    </section>
+
+    <!-- Product Filter -->
+    <section class="product-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="scissors">Surgical Scissors</button>
+                <button class="filter-btn" data-filter="forceps">Forceps</button>
+                <button class="filter-btn" data-filter="blades">Blades</button>
+                <button class="filter-btn" data-filter="clamps">Clamps</button>
+                <button class="filter-btn" data-filter="retractors">Retractors</button>
+                <button class="filter-btn" data-filter="needles">Needles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-showcase">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Surgical Scissors -->
+                <div class="product-item animate__animated animate__fadeInUp" data-category="scissors">
+                    <div class="product-image">
+                        <img src="images/products.jpg" alt="Mayo Scissors">
+                        <div class="product-overlay">
+                            <button class="view-details-btn" data-product="scissors-1">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mayo Scissors</h3>
+                        <p>Heavy-duty scissors for cutting tough tissue and sutures</p>
+                        <div class="product-specs">
+                            <span class="spec">Stainless Steel</span>
+                            <span class="spec">Sterilizable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item animate__animated animate__fadeInUp" data-category="scissors">
+                    <div class="product-image">
+                        <img src="images/products.jpg" alt="Metzenbaum Scissors">
+                        <div class="product-overlay">
+                            <button class="view-details-btn" data-product="scissors-2">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Metzenbaum Scissors</h3>
+                        <p>Fine-tipped scissors for delicate tissue dissection</p>
+                        <div class="product-specs">
+                            <span class="spec">Precision Cut</span>
+                            <span class="spec">Sharp Blades</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Forceps -->
+                <div class="product-item animate__animated animate__fadeInUp" data-category="forceps">
+                    <div class="product-image">
+                        <img src="images/forceps.jpg" alt="Tissue Forceps">
+                        <div class="product-overlay">
+                            <button class="view-details-btn" data-product="forceps-1">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tissue Forceps</h3>
+                        <p>Non-toothed forceps for delicate tissue handling</p>
+                        <div class="product-specs">
+                            <span class="spec">Smooth Tips</span>
+                            <span class="spec">Ergonomic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item animate__animated animate__fadeInUp" data-category="forceps">
+                    <div class="product-image">
+                        <img src="images/foceps2.jpg" alt="Hemostatic Forceps">
+                        <div class="product-overlay">
+                            <button class="view-details-btn" data-product="forceps-2">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hemostatic Forceps</h3>
+                        <p>Clamping forceps for controlling bleeding during surgery</p>
+                        <div class="product-specs">
+                            <span class="spec">Locking Mechanism</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blades -->
+                <div class="product-item animate__animated animate__fadeInUp" data-category="blades">
+                    <div class="product-image">
+                        <img src="images/blades.jpg" alt="Surgical Blades">
+                        <div class="product-overlay">
+                            <button class="view-details-btn" data-product="blades-1">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Surgical Blades #10</h3>
+                        <p>Curved blade for general surgical incisions</p>
+                        <div class="product-specs">
+                            <span class="spec">Ultra Sharp</span>
+                            <span class="spec">Sterile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item animate__animated animate__fadeInUp" data-category="blades">
+                    <div class="product-image">
+                        <img src="images/blades2.jpg" alt="Surgical Blades #15">
+                        <div class="product-overlay">
+                            <button class="view-details-btn" data-product="blades-2">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Surgical Blades #15</h3>
+                        <p>Small curved blade for precise incisions</p>
+                        <div class="product-specs">
+                            <span class="spec">Precision Cut</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clamps -->
+                <div class="product-item animate__animated animate__fadeInUp" data-category="clamps">
+                    <div class="product-image">
+                        <img src="images/clamps.jpg" alt="Kelly Clamps">
+                        <div class="product-overlay">
+                            <button class="view-details-btn" data-product="clamps-1">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kelly Clamps</h3>
+                        <p>Straight hemostatic clamps for vessel occlusion</p>
+                        <div class="product-specs">
+                            <span class="spec">Secure Grip</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item animate__animated animate__fadeInUp" data-category="clamps">
+                    <div class="product-image">
+                        <img src="images/claps.jpg" alt="Mosquito Clamps">
+                        <div class="product-overlay">
+                            <button class="view-details-btn" data-product="clamps-2">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mosquito Clamps</h3>
+                        <p>Small curved clamps for delicate procedures</p>
+                        <div class="product-specs">
+                            <span class="spec">Fine Tips</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Retractors -->
+                <div class="product-item animate__animated animate__fadeInUp" data-category="retractors">
+                    <div class="product-image">
+                        <img src="images/productss.jpg" alt="Army-Navy Retractor">
+                        <div class="product-overlay">
+                            <button class="view-details-btn" data-product="retractors-1">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Army-Navy Retractor</h3>
+                        <p>Hand-held retractor for tissue exposure</p>
+                        <div class="product-specs">
+                            <span class="spec">Ergonomic Handle</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item animate__animated animate__fadeInUp" data-category="retractors">
+                    <div class="product-image">
+                        <img src="images/gloves.jpg" alt="Senn Retractor">
+                        <div class="product-overlay">
+                            <button class="view-details-btn" data-product="retractors-2">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Senn Retractor</h3>
+                        <p>Double-ended retractor with sharp and blunt ends</p>
+                        <div class="product-specs">
+                            <span class="spec">Dual Purpose</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Needles -->
+                <div class="product-item animate__animated animate__fadeInUp" data-category="needles">
+                    <div class="product-image">
+                        <img src="images/closeup-syringe.jpg" alt="Surgical Needles">
+                        <div class="product-overlay">
+                            <button class="view-details-btn" data-product="needles-1">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cutting Needles</h3>
+                        <p>Triangular point needles for tough tissue</p>
+                        <div class="product-specs">
+                            <span class="spec">Sharp Point</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item animate__animated animate__fadeInUp" data-category="needles">
+                    <div class="product-image">
+                        <img src="images/gloves2.jpg" alt="Tapered Needles">
+                        <div class="product-overlay">
+                            <button class="view-details-btn" data-product="needles-2">View Details</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tapered Needles</h3>
+                        <p>Round-bodied needles for delicate tissue</p>
+                        <div class="product-specs">
+                            <span class="spec">Smooth Pass</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <div class="modal-image">
+                        <img id="modalImage" src="" alt="">
+                    </div>
+                    <div class="modal-actions">
+                        <button class="btn btn-primary" id="orderBtn">
+                            <i class="fab fa-whatsapp"></i> Order via WhatsApp
+                        </button>
+                        <button class="btn btn-secondary" id="contactBtn">
+                            <i class="fas fa-phone"></i> Contact Sales
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <div class="modal-features">
+                        <h3>Key Features:</h3>
+                        <ul id="modalFeatures"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Custom Surgical Instruments?</h2>
+                <p>We can provide custom-made instruments to meet your specific requirements</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-user-md"></i>
+                        <span>SurgiAID Traders</span>
+                    </div>
+                    <p>Your trusted partner for premium surgical instruments and medical equipment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:info@surgiaid.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Defence Road, Near Javson Hotel, Sialkot</p>
+                        <p><i class="fas fa-phone"></i> +923266472126</p>
+                        <p><i class="fas fa-envelope"></i> info@surgiaid.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <div class="business-hours">
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 9:00 AM - 2:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SurgiAID Traders. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/923266472126" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
