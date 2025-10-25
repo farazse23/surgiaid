@@ -279,8 +279,15 @@ function initFormValidation() {
             });
             
             if (isValid) {
+                // Send email using mailto with pre-filled content
+                const subject = data.subject ? `Contact Form: ${data.subject}` : 'Contact Form Inquiry';
+                const body = `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || 'Not provided'}\nCompany: ${data.company || 'Not provided'}\nSubject: ${data.subject || 'General Inquiry'}\n\nMessage:\n${data.message}`;
+                
+                const mailtoLink = `mailto:surgiaidtraders@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                window.location.href = mailtoLink;
+                
                 // Show success message
-                showNotification('Message sent successfully!', 'success');
+                showNotification('Opening email client to send your message...', 'success');
                 form.reset();
             } else {
                 showNotification('Please fill in all required fields.', 'error');
